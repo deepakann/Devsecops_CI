@@ -35,7 +35,7 @@ jobs:
           path: target/*.jar
 
       - name: Configure Jfrog CLI
-        uses: jfrog/setup-jfrog-cli@v3
+        uses: jfrog/setup-jfrog-cli@v4.5.6
         with:
            version: latest
         env:
