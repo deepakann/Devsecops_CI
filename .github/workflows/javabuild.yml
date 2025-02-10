@@ -1,4 +1,4 @@
-# .github/workflows/javabuild.yml
+# .github/workflows/javabuild.yml to trigger build
 
 name: Build
 
