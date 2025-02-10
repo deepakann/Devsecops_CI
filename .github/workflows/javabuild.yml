@@ -41,13 +41,3 @@ jobs:
         env:
            JF_URL: https://trialdeepademo.jfrog.io
            JF_ACCESS_TOKEN: ${{ secrets.JFROG_TOKEN }}
-
-      - name: Upload JAR to JFrog
-        env:
-           JFROG_USER: ${{ secrets.JFROG_USER }}
-           JFROG_PASSWORD: ${{ secrets.JFROG_PASSWORD }}
-        run: |
-          sudo jf rt u "target/*.jar" "gitactions-repo/" --url="https://trialdeepademo.jfrog.io/artifactory/" --user="$JFROG_USER" --password="$JFROG_PASSWORD"
-        
-
-           
