@@ -1,4 +1,4 @@
-# Pipeline trigger to test
+# Pipeline trigger to test the flow
 name: CI Pipeline
 on:
   push:
