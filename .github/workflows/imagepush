@@ -6,7 +6,7 @@ on:
 
 jobs:
   image_push:
-    runs-on: 
+    runs-on: ghactions-demo
     env:
       DOCKER_IMAGE: dkannaiy/petapp:${{ github-sha }}
 
