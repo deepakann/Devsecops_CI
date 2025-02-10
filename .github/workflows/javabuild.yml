@@ -44,7 +44,7 @@ jobs:
 
       - name: Upload JAR to JFrog
         run: |
-          sudo jf rt u "target/*.jar" "gitactions-repo/"
+          sudo jf rt u "target/*.jar" "gitactions-repo/" --url="https://trialdeepademo.jfrog.io/artifactory/" --user="deepakann" --password="Kddevops2023$""
         
 
            
