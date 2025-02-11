@@ -54,7 +54,7 @@ jobs:
             --password=${{ secrets.JFROG_PASSWORD }} \
             --interactive=false
 
-       - name: Upload JAR to JFrog
-         run: |
-           jfrog rt u "target/*.jar" "petjfrog-repo/" --server-id=my-jfrog-server
+      - name: Upload JAR to JFrog
+        run: |
+          jfrog rt u "target/*.jar" "petjfrog-repo/" --server-id=my-jfrog-server
 
