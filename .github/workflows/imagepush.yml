@@ -7,14 +7,14 @@ on:
 jobs:
   image_push:
     runs-on: ghactions-demo
-    env:
-      DOCKER_IMAGE: dkannaiy/petapp:${{ github-sha }}
+    # env:
+      # DOCKER_IMAGE: dkannaiy/petapp:${{ github-sha }}
 
     steps:
       - name: Build Docker Image
         run: |
-          sudo docker build -t ${{ env.DOCKER_IMAGE }} .
-          sudo docker save ${{ env.DOCKER_IMAGE }} > docker_image.tar
+          sudo docker build -t dkannaiy/petapp:latest .
+          sudo docker save dkannaiy/petapp:latest > docker_image.tar
 
       - name: Upload Docker Image Artifact
         uses: actions/upload-artifact@v4.4.1
