@@ -26,7 +26,9 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashfiles('**pom.xml') }}
 
       - name: Build with Maven
-        run: mvn clean install
+        run: |
+          mvn clean 
+          mvn install
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4.4.1
