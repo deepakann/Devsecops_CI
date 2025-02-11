@@ -7,8 +7,8 @@ on:
 jobs:
   image_push:
     runs-on: ghactions-demo
-    # env:
-      # DOCKER_IMAGE: dkannaiy/petapp:${{ github-sha }}
+    env:
+      DOCKER_IMAGE: dkannaiy/petapp:${{ github-sha }}
 
     steps:
       - name: Build Docker Image
