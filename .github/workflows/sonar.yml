@@ -1,4 +1,4 @@
-# .github/workflows/sonar.yml updated
+# .github/workflows/sonar.yml updated check
 name: Sonar Scan
 
 on:
