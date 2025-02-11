@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  # DOCKER_IMAGE: dkannaiy/petapp:${{ github-sha }}
+  DOCKER_IMAGE: dkannaiy/petapp:${{ github-sha }}
   MAVEN_OPTS: "-DskipTests=true"
 
 jobs:
