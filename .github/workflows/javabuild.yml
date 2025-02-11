@@ -45,14 +45,15 @@ jobs:
            JF_ACCESS_TOKEN: ${{ secrets.JFROG_TOKEN }}
 
 
-      - name: Set up JFrog CLI
-        run: |
-          echo "Configuring JFrog CLI..."
-          jfrog config add my-jfrog-server \
-            --url=https://trialdeepademo.jfrog.io \
-            --user=${{ secrets.JFROG_USER }} \
-            --password=${{ secrets.JFROG_PASSWORD }} \
-            --interactive=false
+        disabled_section: | 
+      -  name: Set up JFrog CLI
+         run: |
+           echo "Configuring JFrog CLI..."
+           jfrog config add my-jfrog-server \
+             --url=https://trialdeepademo.jfrog.io \
+             --user=${{ secrets.JFROG_USER }} \
+             --password=${{ secrets.JFROG_PASSWORD }} \
+             --interactive=false
 
       - name: Upload JAR to JFrog
         run: |
