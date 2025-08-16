@@ -6,7 +6,7 @@ pipeline {
     stage ('print hello') {
       steps{
         script{
-          hello("Multibranch Pipeline from helm_Argo Branch")
+          hello('Multibranch Pipeline from helm_Argo Branch')
         }
       }
     }
